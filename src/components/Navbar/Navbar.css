@@ -1,0 +1,23 @@
+.containerNav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    background-color: rgba(241, 240, 241, 0.9);
+    color: white;
+}
+ 
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+
+
+

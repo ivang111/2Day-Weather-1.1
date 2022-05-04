@@ -1,0 +1,164 @@
+import React from 'react';
+import './CardLocation.css';
+import Clock from '../Clock';
+import { MdMyLocation } from "react-icons/md";
+
+export default function CardLocation ({name, weather, temp, img, description, min, max, humidity, wind, id}) {
+
+  
+
+  return (
+       <div key={id} className="container">
+         <div className='localCard'>
+          <div>
+            <p className='weather'>{weather}</p>
+            <h5 className='name' >< MdMyLocation/> {name}<Clock /></h5>
+          </div>
+          <div className='imgCoantainer' >
+            <div className='conteinerTemp'>
+             <h2 className='temph1' >{temp}°</h2>
+            </div>
+            <img className='iconWeather' src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} width="80" height="80" alt="" />
+          </div>
+          <p className='description'>{description}</p>
+          <p className='data'>Wind: {wind}m/s</p>
+                
+          <div className='containerButtom'>
+            <div className='dataContainer'>
+              <p className='data' >{max}℃</p>
+              <p className='dataVaule'>Max</p>
+            </div>
+            <div className='dataContainer'>
+              <p className='data' >{min}℃</p>
+              <p className='dataVaule'>Min</p>
+            </div>
+            <div className='dataContainer no-border'>
+              <p className='data'>{humidity}%</p>
+              <p className='dataVaule'>Humidity</p>
+            </div>
+            
+          </div>
+         </div>
+       </div>
+            
+       
+       
+     
+      
+    );
+};
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  .localCard {
+    background: rgb(237, 235, 235, 0.4);
+    width: 350px;
+    display: inline-block;
+    border-radius:  14px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    
+  } 
+  
+  .name{
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 3px;
+      margin-top: 10px;
+  }
+  .weather {
+      font-size: 26px;
+      color: black;
+      font-weight: 900;
+      margin-bottom: 5px;
+       margin-top: 10px;
+  
+    }
+  
+  .imgCoantainer {
+      background-image: url("../../image/noche.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;   
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+      margin-bottom: 35px;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 22%;
+      box-shadow: -1px 15px 30px -12px black;
+    }
+    
+   .iconWeather{
+      width: 200px;
+      height: 200px;
+      position: absolute;    
+      top: 40px;
+      left: 70px;
+      -webkit-filter: drop-shadow(5px 5px 5px #222 );
+      filter: drop-shadow(5px 5px 5px #222);
+   }
+   .conteinerTemp{
+      background-color: #e8e7e7;
+      border: 2px solid #6e035a;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      position: absolute;    
+      top: -10px;
+      left: 5px;
+      text-align: center;
+   }
+   .temph1{
+      margin-top: 5px;
+      margin-left: 5px;
+      color: rgb(107, 3, 111);
+      font-size: 35px;
+      font-family: 'Oswald', sans-serif;
+   }
+  
+    .description {
+      font-size: 25px;  
+      padding: 0px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .containerButtom{
+      color: white;
+      font-weight: 700;
+      background-color: rgba(100, 10, 122, 0.75);
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      display: flex;
+      justify-content: center;
+  
+    }
+    
+    .dataContainer{
+      padding: 10px 30px 10px 30px;
+      border-right: 1px solid white;
+  }
+      
+    .data{
+      position: relative;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .dataVaule{
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: -10px;
+  
+    }
+    .no-border {
+      border-right: none;
+    }
+  

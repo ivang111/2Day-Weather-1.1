@@ -1,0 +1,261 @@
+.cardContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-right: 20px;
+    display: block;
+    
+}
+.topContainer{
+    width: 350px;
+    height: 490px;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 40px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: inline-block;
+    position: relative;
+}
+.searchName{
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    color: chocolate;
+    padding-bottom: 8px;
+    margin-right: -80px;
+}
+.Clock{
+    margin-left: 170px;
+    color: azure;
+    background-color: chocolate;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 1px;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50% ;
+    border: solid #BDBDBD 1px; 
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3)  ; 
+    -webkit-box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3)  ; 
+    -moz-box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3)  ; 
+}
+.searchTempConainer{
+    position: relative;
+}
+.searchTemp{
+    position: absolute;
+    top: 2.3rem;
+    left: 5.2rem;
+    color: rgb(215, 98, 20);
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    -webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both
+}
+.image{
+    position: absolute;
+    top: 1rem;
+    left: 2.5rem;
+}
+.serachImg{
+    position: relative;
+    top: -5.5rem;
+    left: -6rem;
+    height: 250px;
+    width: auto;
+    animation:bounce-in-left 1.6s ease-in;
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.windConteiner{
+    position: absolute;
+    top:9rem;
+    right: 1.2rem;
+}
+.iconWind{
+    width: 2.5rem;
+    height: auto;
+}
+.windTitle{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.searchWind{
+    position: relative;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: 'Oswald', sans-serif;
+      color: chocolate;
+}
+
+.dataDescription{
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 11.8rem;
+    left: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    -webkit-animation: tracking-in-expand 0.7s ease-in both;
+      animation: tracking-in-expand 0.7s ease-in both;
+}
+.bottonContainer{
+    position: static;
+
+}
+.containerMax{
+    position: relative;
+    top: -0.8rem;
+    left: 3rem;
+    background-color: rgb(247, 245, 244, 0.5);
+    border-radius: 15px;
+    height: 60px;
+    width: 90px;
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    border: solid #BDBDBD 1px; 
+    padding-top: 9px;
+
+}
+.containerMin{
+    position: relative;
+    top: -8px;
+    left: 3rem;
+    background-color: rgb(247, 245, 244, 0.5);
+    border-radius: 15px;
+    height: 60px;
+    width: 90px;
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    border: solid #BDBDBD 1px; 
+    padding-top: 9px;
+    
+}
+.valuesData{
+    font-size: 20px;
+      margin-bottom: 10px;
+      font-family: 'Oswald', sans-serif;
+      color: chocolate;
+}
+.valueNameData{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.containerhumidity{
+    position: relative;
+    top: -6.6rem;
+    left: 8.5rem;
+    background-color: rgb(210, 105, 30);
+    border-radius: 25px;
+    height: 130px;
+    width: 150px;
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    box-shadow: 0px 1px 8px 0px rgba(0,0,0,0.22);
+    border: solid #BDBDBD 1px; 
+    padding-top: 9px;
+    animation:flip-horizontal-bottom 1s cubic-bezier(.455,.03,.515,.955) backwards
+}
+.humIco{
+    margin-top: -0.7rem;
+    width: 80px;
+    height: auto;
+    color: white;
+}
+.valuesDatah{
+    font-size: 25px;
+    margin-top: -10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.valueNameDatah{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    .serachImg{
+        position: relative;
+        top: -7.5rem;
+        left: -8.2rem;
+        height: 220px;
+        width: auto;
+        animation:bounce-in-left 1.6s ease-in;
+        -webkit-filter: drop-shadow(5px 5px 5px #222 );
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+    .containerhumidity{
+        top: -7.5rem;
+        left: 11rem;
+    }
+    .containerMax{
+        top: 0.5rem;
+        
+    }
+    .containerMin{
+        top: 1rem;
+    }
+    .windConteiner{
+        top: 12rem;
+        right: 2rem;
+        
+    }
+    .searchTemp{
+        left: 6rem;
+    }
+    .Clock{
+        padding-top: 3px;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+@keyframes bounce-in-left{0%{transform:translateX(-600px);animation-timing-function:ease-in;opacity:0}38%{transform:translateX(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateX(-68px);animation-timing-function:ease-in}72%{transform:translateX(0);animation-timing-function:ease-out}81%{transform:translateX(-28px);animation-timing-function:ease-in}90%{transform:translateX(0);animation-timing-function:ease-out}95%{transform:translateX(-8px);animation-timing-function:ease-in}100%{transform:translateX(0);animation-timing-function:ease-out}}
+
+
+
+ @-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}} 
+
+ 
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flip-horizontal-bottom{0%{transform:rotateX(0)}100%{transform:rotateX(-180deg)}}
+  
